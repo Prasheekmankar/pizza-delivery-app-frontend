@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { API_URL } from "../helpers/global-constants";
-import Pizza from "../helpers/pizza";
+import Bike from "../helpers/pizza";
 import { useHistory } from "react-router-dom";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import jsonwebtoken from "jsonwebtoken";
-export function PizzaList() {
+export function BikeList() {
   const history = useHistory();
 
   const [pizzas, setPizzas] = useState([]);
@@ -19,7 +19,7 @@ export function PizzaList() {
       if (decoded.exp * 1000 < Date.now()) {
         history.push("/userLogIn");
       }
-      fetch(`${API_URL}/pizzalist`, {
+      fetch(`${API_URL}/bikelist`, {
         headers: {
           "x-auth-token": token,
         },
@@ -33,18 +33,18 @@ export function PizzaList() {
   const pizzas1 = pizzas;
   return (
     <section>
-      <Button
+      {/* <Button
         variant="outlined"
         color="inherit"
         onClick={() => history.push("/createPizza")}
       >
         Create Pizza
-      </Button>
+      </Button> */}
 
-      <div className="pizza-container">
+      <div className="bike-container">
         {pizzas1.map((pizza) => (
           <div key={pizza._id}>
-            <Pizza pizza={pizza} key={pizza._id} />
+            <Bike pizza={pizza} key={pizza._id} />
           </div>
         ))}
       </div>

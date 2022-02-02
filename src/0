@@ -1,0 +1,117 @@
+ const a = [
+  {
+    _id: "61b32320d4c0d6690a75dcc7",
+    name: "Chili pepper",
+    img: "https://st.focusedcollection.com/11312302/i/1800/focused_147975937-stock-photo-pizza-with-chili-pepper.jpg",
+    varients: ["small", "medium", "large"],
+    category: "veg",
+    id: "1",
+    prices: [
+      {
+        small: 100,
+        medium: 200,
+        large: 400,
+      },
+    ],
+  },
+  {
+    _id: "61b32320d4c0d6690a75dcca",
+    name: "Shrimp",
+    img: "https://i.pinimg.com/originals/c8/26/d4/c826d4b6ac2313aaedead1ccd833c97c.jpg",
+    varients: ["small", "medium", "large"],
+    prices: [
+      {
+        small: 99,
+        medium: 199,
+        large: 399,
+      },
+    ],
+    category: "veg",
+  },
+  {
+    _id: "61b32320d4c0d6690a75dcc8",
+    name: "Mushrooms",
+    img: "https://www.foodiecrush.com/wp-content/uploads/2018/05/Truffle-Mushroom-Pizza-foodiecrush.com-017.jpg",
+    varients: ["small", "medium", "large"],
+    prices: [
+      {
+        small: 99,
+        medium: 199,
+        large: 399,
+      },
+    ],
+    category: "veg",
+  },
+  {
+    _id: "61b32320d4c0d6690a75dcc6",
+    name: "Barbecue Chicken",
+    img: "https://www.tasteandtellblog.com/wp-content/uploads/2021/01/BBQ-Chicken-Pizza-3.jpg",
+    varients: ["small", "medium", "large"],
+    prices: [
+      {
+        small: 99,
+        medium: 199,
+        large: 399,
+      },
+    ],
+    category: "veg",
+  },
+  {
+    _id: "61b32320d4c0d6690a75dccc",
+    name: "Italian pizza",
+    img: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aXRhbGlhbiUyMHBpenphfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    varients: ["small", "medium", "large"],
+    prices: [
+      {
+        small: 99,
+        medium: 199,
+        large: 399,
+      },
+    ],
+    category: "veg",
+  },
+  {
+    _id: "61b32320d4c0d6690a75dccb",
+    name: " Pepperoni pizza",
+    img: "https://www.moulinex-me.com/medias/?context=bWFzdGVyfHJvb3R8MTQzNTExfGltYWdlL2pwZWd8aDM2L2g1Mi8xMzA5NzI3MzI2MjExMC5qcGd8N2MxZDhmNmI5ZTgzZDZlZWQyZGQ4YjFlZjUyNDlkMTExYjdkZDdlZmFkY2I0N2NmNjljOGViNmExZjIyMDU4Yw",
+    varients: ["small", "medium", "large"],
+    prices: [
+      {
+        small: 99,
+        medium: 199,
+        large: 399,
+      },
+    ],
+    category: "veg",
+  },
+  {
+    _id: "61b32320d4c0d6690a75dcc9",
+    name: "Vegetarian",
+    img: "https://kfoods.com/images1/newrecipeicon/vegetarian-pizza_4988.jpg",
+    varients: ["small", "medium", "large"],
+    prices: [
+      {
+        small: 99,
+        medium: 199,
+        large: 399,
+      },
+    ],
+    category: "veg",
+  },
+  {
+    _id: "61b46562b42a8481f0ec4c79",
+    name: "Margherita",
+    img: "https://www.yumcurry.com/wp-content/uploads/2020/06/pizza-margherita-recipe.jpg",
+    varients: ["small", "medium", "large"],
+    prices: [
+      {
+        small: 99,
+        medium: 199,
+        large: 399,
+      },
+    ],
+    category: "veg",
+  },
+];
+
+console.log(a);

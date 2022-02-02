@@ -11,8 +11,8 @@ export const CartItem = ({ pizza, index, handleRemove }) => {
       <List>
       <div className="cart-content-child">
         <ListItem>
-          <img src={pizza.img} className="pizza-poster-cart" alt={pizza.name} />
-          <div className="pizza-details">
+          <img src={pizza.img} className="bike-poster-cart" alt={pizza.name} />
+          <div className="bike-details">
             <h1 style={{margin: "2rem"}}>{pizza.name}</h1>
           </div>
           <Button

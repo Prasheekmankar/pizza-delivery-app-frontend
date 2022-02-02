@@ -10,11 +10,11 @@
   text-align: center;
   object-fit: cover;
 }
-.pizzas-container {
+.bikes-container {
   height: 480px;
   width: 319px;
 }
-.pizza-poster {
+.bike-poster {
   height: 20rem;
   width: 20rem;
   object-fit: cover;
@@ -30,19 +30,19 @@
   margin-top: 15rem;
 }
 
-.pizza {
+/* .pizza {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-}
-.pizza-details {
+} */
+.bike-details {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
-.pizza-container {
+.bike-container {
   display: flex;
   flex-direction: row;
   gap: 24px;
@@ -51,7 +51,7 @@
   justify-content: center;
 }
 
-.pizza-poster-cart {
+.bike-poster-cart {
   height: 10rem;
   width: 10rem;
   border-radius: 10px;

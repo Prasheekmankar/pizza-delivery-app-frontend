@@ -46,7 +46,7 @@ export function UserLogIn() {
     // console.log(json);
     if (json.success) {
       localStorage.setItem("token", json.token);
-      history.push("/pizzaList");
+      history.push("/bikeList");
     } else {
       alert("Invalid Credentials");
     }

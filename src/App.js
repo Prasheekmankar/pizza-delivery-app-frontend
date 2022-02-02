@@ -6,10 +6,10 @@ import { AdminLogIn } from "./components/AdminLogIn";
 import { UserLogIn } from "./components/userLogIn";
 import { SignUp } from "./components/signUp";
 import { Success } from "./components/success";
-import { PizzaList } from "./components/PizzaList";
+import { BikeList } from "./components/BikeList";
 import { DashBoard } from "./components/adminDashboard";
 import { AppBar, Toolbar } from "@mui/material";
-import { CustomPizza } from "./components/createPizza";
+// import { CustomPizza } from "./components/createPizza";
 import Typography from "@mui/material/Typography";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import IconButton from "@mui/material/IconButton";
@@ -40,9 +40,9 @@ export default function App() {
           <Button
             variant="text"
             color="inherit"
-            onClick={() => history.push("/pizzaList")}
+            onClick={() => history.push("/bikeList")}
           >
-            Buy pizza
+            select bike
           </Button>
           <Button
             variant="text"
@@ -59,7 +59,7 @@ export default function App() {
             signUp
           </Button>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <h2 className="header">Pizza Shop</h2>
+            <h2 className="header">Rental Shop</h2>
           </Typography>
 
           <Button
@@ -100,15 +100,15 @@ export default function App() {
         <Route path="/success">
           <Success />
         </Route>
-        <Route path="/pizzaList">
-          <PizzaList />
+        <Route path="/bikeList">
+          <BikeList />
         </Route>
         <Route path="/adminDashboard">
           <DashBoard />
         </Route>
-        <Route path="/createPizza">
+        {/* <Route path="/createPizza">
           <CustomPizza />
-        </Route>
+        </Route> */}
         <Route path="/cart">
           <Cart />
         </Route>

@@ -58,7 +58,7 @@ import Button from "@mui/material/Button";
 
 import { useDispatchCart } from "../context/Context";
 
-const Pizza = ({ pizza }) => {
+const Bike = ({ pizza: bike }) => {
   // const [varient, setVarient] = useState("small");
 
   const dispatch = useDispatchCart();
@@ -70,16 +70,16 @@ const Pizza = ({ pizza }) => {
   const [disable, setDisable] = useState(false);
 
   return (
-    <Card className="pizzas-container">
-      <img  className="pizza-poster" src={pizza.img} alt={pizza.name} />
+    <Card className="bikes-container">
+      <img  className="bike-poster" src={bike.poster} alt={bike.name} />
       <CardContent>
-        <div className="pizza-details">
-          <h1>{pizza.name}</h1>
+        <div className="bike-details">
+          <h1>{bike.name}</h1>
         </div>
         <Button
           disabled={disable}
           onClick={() => {
-            addToCart(pizza);
+            addToCart(bike);
             setDisable(!disable);
           }}
         >
@@ -90,4 +90,50 @@ const Pizza = ({ pizza }) => {
   );
 };
 
-export default Pizza;
+export default Bike;
+
+
+
+
+// prasheek bike content
+
+
+// import React, { useState } from "react";
+// import { Card, CardContent } from "@mui/material";
+// import Button from "@mui/material/Button";
+
+// import { useDispatchCart } from "../context/Context";
+
+// const bike = ({ bike }) => {
+//   // const [varient, setVarient] = useState("small");
+
+//   const dispatch = useDispatchCart();
+
+//   const addToCart = (item) => {
+//     console.log(item)
+//     dispatch({ type: "ADD", item });
+//   };
+//   const [disable, setDisable] = useState(false);
+
+//   return (
+//     <Card className="pizzas-container">
+//       <img  className="pizza-poster" src={bike.poster} alt={bike.name} />
+//       <CardContent>
+//         <div className="pizza-details">
+//           <h1>{bike.name}</h1>
+//         </div>
+//         <Button
+//           disabled={disable}
+//           onClick={() => {
+//             addToCart(bike);
+//             setDisable(!disable);
+//           }}
+//         >
+//           {disable === true ? "Added" : "Add to cart"}
+//         </Button>
+//       </CardContent>
+//     </Card>
+//   );
+// };
+
+// export default Pizza;
