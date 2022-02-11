@@ -11,9 +11,14 @@ export const CartItem = ({ pizza, index, handleRemove }) => {
       <List>
       <div className="cart-content-child">
         <ListItem>
-          <img src={pizza.img} className="bike-poster-cart" alt={pizza.name} />
+          <img src={pizza.poster} className="bike-poster-cart" alt={pizza.name} />
           <div className="bike-details">
             <h1 style={{margin: "2rem"}}>{pizza.name}</h1>
+            <h3 style={{margin: "2rem"}}>{pizza.type}</h3>
+            <h3 style={{margin: "2rem"}}>{pizza.mileage}</h3>
+            <h3 style={{margin: "2rem"}}>{pizza.seater}</h3>
+            <h3 style={{margin: "2rem"}}>{pizza.daycost}/day</h3>
+            <h3 style={{margin: "2rem"}}>{pizza.weekcost}/week</h3>
           </div>
           <Button
             onClick={() => handleRemove(index)}
