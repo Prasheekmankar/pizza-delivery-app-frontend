@@ -17,10 +17,12 @@ import Badge from "@mui/material/Badge";
 import { Home } from "./components/Home";
 import { useCart } from "./context/Context";
 import Cart from "./components/cart";
+import { useState } from "react";
 
 export default function App() {
   const items = useCart();
   const history = useHistory();
+  const [cart, setCart] = useState([]);
   return (
     <div className="App">
       <AppBar
@@ -101,7 +103,7 @@ export default function App() {
           <Success />
         </Route>
         <Route path="/bikeList">
-          <BikeList />
+          <BikeList cart={cart} setCart={setCart} />
         </Route>
         <Route path="/adminDashboard">
           <DashBoard />

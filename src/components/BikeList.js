@@ -4,7 +4,7 @@ import Bike from "../helpers/pizza";
 import { useHistory } from "react-router-dom";
 // import Button from "@mui/material/Button";
 import jsonwebtoken from "jsonwebtoken";
-export function BikeList() {
+export function BikeList({ cart, setCart }) {
   const history = useHistory();
 
   const [pizzas, setPizzas] = useState([]);
@@ -44,7 +44,7 @@ export function BikeList() {
       <div className="bike-container">
         {pizzas1.map((pizza) => (
           <div key={pizza._id}>
-            <Bike pizza={pizza} key={pizza._id} />
+            <Bike bike={pizza} key={pizza._id} cart={cart} setCart={setCart} />
           </div>
         ))}
       </div>

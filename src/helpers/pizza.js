@@ -58,20 +58,20 @@ import Button from "@mui/material/Button";
 
 import { useDispatchCart } from "../context/Context";
 
-const Bike = ({ pizza: bike }) => {
+const Bike = ({ bike, cart, setCart }) => {
   // const [varient, setVarient] = useState("small");
 
   const dispatch = useDispatchCart();
 
   const addToCart = (item) => {
-    console.log(item)
+    console.log(item);
     dispatch({ type: "ADD", item });
   };
   const [disable, setDisable] = useState(false);
 
   return (
     <Card className="bikes-container">
-      <img  className="bike-poster" src={bike.poster} alt={bike.name} />
+      <img className="bike-poster" src={bike.poster} alt={bike.name} />
       <CardContent>
         <div className="bike-details">
           <h1>{bike.name}</h1>
@@ -92,11 +92,7 @@ const Bike = ({ pizza: bike }) => {
 
 export default Bike;
 
-
-
-
 // prasheek bike content
-
 
 // import React, { useState } from "react";
 // import { Card, CardContent } from "@mui/material";
